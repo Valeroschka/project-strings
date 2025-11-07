@@ -1,0 +1,23 @@
+# Node.js / Expo
+node_modules/
+.expo/
+.expo-shared/
+dist/
+web-build/
+*.log
+
+# Java / Spring Boot
+/backend/build/
+/backend/out/
+/backend/.gradle/
+/backend/.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# macOS
+.DS_Store
+
+# Environment files
+.env
