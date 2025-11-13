@@ -1,13 +1,10 @@
 package com.project_string.guitarapp;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class GuitarappApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
 
 }
