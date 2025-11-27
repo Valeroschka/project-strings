@@ -21,7 +21,16 @@ public class User {
     @Column(nullable = false)
     private String username;
 
-    public User() {}
+
+    public User(){
+        
+    }
+
+    public User(String email, String password, String username) {
+        this.email = email;
+        this.passwordHash = password;
+        this.username = username;
+    }
 
     // Getter/Setter
 
