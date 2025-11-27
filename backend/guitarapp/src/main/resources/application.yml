@@ -1,4 +1,7 @@
 spring:
+  application:
+    name: guitarapp
+
   datasource:
     url: jdbc:postgresql://localhost:5432/guitar_db
     username: postgres
@@ -7,9 +10,14 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
-    
-  security:
-    user:
-      name: admin
-      password: secret123
+
+security:
+  user:
+    name: admin
+    password: secret123
+
+jwt:
+  secret: thisIsMysecregtfrdesww233eggtffeeddgkjjhhtdhttebd54ndhdhfhhhshs8877465sbbdd
+  expiration: 3600000

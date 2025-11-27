@@ -13,7 +13,7 @@ public class UserController {
         this.userService = userService;
     }
 
-    @PostMapping("/register")
+    @PostMapping("/usersTest")
     public ResponseEntity<?> register(@RequestBody UserRegistrationRequest request) {
         userService.register(request);
         return ResponseEntity.ok().body("User registered");
